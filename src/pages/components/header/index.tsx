@@ -22,8 +22,8 @@ export function Header() {
 
       <Menu>
         <a className={router.pathname == '/'? 'active' : ''} onClick={() => router.push('/')}>Sobre mim</a>
-        <a className={router.pathname == '/frontend'? 'active' : ''} onClick={() => router.push('/frontend')}>Front-end</a>
         <a className={router.pathname == '/backend'? 'active' : ''} onClick={() => router.push('/backend')}>Back-end</a>
+        <a className={router.pathname == '/frontend'? 'active' : ''} onClick={() => router.push('/frontend')}>Front-end</a>
         <a className={router.pathname == '/portfolio'? 'active' : ''} onClick={() => router.push('/portfolio')}>Portfólio</a>
         <a className={router.pathname == '/contato'? 'active' : ''} onClick={() => router.push('/contato')}>Contato</a>
       </Menu>
