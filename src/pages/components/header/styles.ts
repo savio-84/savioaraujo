@@ -16,15 +16,33 @@ export const HeaderComponent = styled('header', {
   'div': {
     display: 'flex',
     alignItems: 'center',
-    gap: '2rem'
+    gap: '2rem',
+    cursor: 'pointer',
   },
 
   'nav': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    gap: '2rem',
-    
+    gap: '2rem',    
+  }
+});
+
+export const Menu = styled('nav', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  gap: '2rem',
+
+  'a': {
+    color: 'rgba(255, 255,255, .5)',
+    fontWeight: 'bold',
+    fontSize: '1.875rem',
+    textDecoration: 'none',
+    cursor: 'pointer',
+    '&.active': {
+      color: 'White',
+    }
   }
 });
 
@@ -32,6 +50,7 @@ export const Preview = styled('div', {
   paddingRight: '$8',
   borderRadius: '100%',
   overflow: 'hidden',
+  
   '@media(max-width: 600px)': {
     display: 'none'
   }

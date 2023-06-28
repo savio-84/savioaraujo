@@ -1,11 +1,14 @@
-import { HeaderComponent, Preview } from './styles';
+import { HeaderComponent, Preview, Menu } from './styles';
 import Image from 'next/image';
-import previewImg from '../../../../public/me (1).jpg';
+import previewImg from '../../../../public/me.svg';
+import { useRouter } from 'next/router';
 
-export function Header() {
+export function Header() {  
+  const router = useRouter();
+  
   return (
     <HeaderComponent>
-      <div>
+      <div onClick={() => router.push('/')}>
         <Preview>
           <Image 
             src={previewImg} 
@@ -17,13 +20,13 @@ export function Header() {
         <h1>Sávio Araújo</h1>
       </div>
 
-      <nav>
-        <a href="/">Sobre mim</a>
-        <a href="/rontend">Front-end</a>
-        <a href="/backend">Back-end</a>
-        <a href="/portfolio">Portfólio</a>
-        <a href="/contato">Contato</a>
-      </nav>
+      <Menu>
+        <a className={router.pathname == '/'? 'active' : ''} onClick={() => router.push('/')}>Sobre mim</a>
+        <a className={router.pathname == '/frontend'? 'active' : ''} onClick={() => router.push('/frontend')}>Front-end</a>
+        <a className={router.pathname == '/backend'? 'active' : ''} onClick={() => router.push('/backend')}>Back-end</a>
+        <a className={router.pathname == '/portfolio'? 'active' : ''} onClick={() => router.push('/portfolio')}>Portfólio</a>
+        <a className={router.pathname == '/contato'? 'active' : ''} onClick={() => router.push('/contato')}>Contato</a>
+      </Menu>
     </HeaderComponent>
   );
 }

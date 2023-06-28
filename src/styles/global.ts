@@ -9,8 +9,8 @@ export const globalStyles = globalCss({
 
   body: {
     '-webkit-font-smoothing': 'antialiased',
-    backgroundColor: '$gray900',
-    color: '$gray100'
+    backgroundColor: '#222222',
+    color: '$gray100',
   },
 
   'body, input, textarea, button': {
@@ -22,6 +22,8 @@ export const globalStyles = globalCss({
     height: '100vh',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    overflowY: 'auto',
+    overflowX: 'hidden',
   }
 })
