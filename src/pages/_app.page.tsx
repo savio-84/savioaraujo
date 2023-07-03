@@ -2,7 +2,7 @@ import { globalStyles } from '@/styles/global'
 import type { AppProps } from 'next/app'
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { useRouter } from 'next/router';
+
 
 globalStyles()
 
