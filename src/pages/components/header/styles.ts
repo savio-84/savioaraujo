@@ -104,15 +104,19 @@ export const DropdownList = styled('ul', {
   padding: 0,
   margin: 0,
   listStyle: 'none',
-  width: '10rem',
-  
+  width: '20rem',  
 });
 
 export const DropdownItem = styled('li', {
-  padding: '.5rem',
+  padding: '1.5rem',
   backgroundColor: '#333333',
-  fontSize: '1.3rem',
+  fontSize: '2rem',
+
   '&:hover': {
     backgroundColor: '#222222',
   },
+
+  '& + li': {
+    borderTop: '1px solid gray'
+  }
 });
