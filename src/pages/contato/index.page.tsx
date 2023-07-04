@@ -62,7 +62,7 @@ export default function Contact() {
                 <Phone size={'3.5rem'} color='#007CED'/>
                 <div>
                   <h2>+55 (84) 981718070</h2>
-                  <p>Telefone e whatsapp, estou disponível todos os dias das 8h as 18h.</p>
+                  <p>Telefone e whatsapp, estou disponível todos os dias das 8h às 18h.</p>
                 </div>
               </MainContentSection>
 
