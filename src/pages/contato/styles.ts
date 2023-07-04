@@ -5,7 +5,7 @@ export const ContentContainer = styled('main', {
   display: 'flex',
   flexDirection: 'column',
   overflowY: 'auto',
-  overflowX: 'hidden'
+  overflowX: 'hidden',
 });
 
 export const ContentContainerSection = styled('section', {
@@ -15,17 +15,25 @@ export const ContentContainerSection = styled('section', {
   alignItems: 'center',
   justifyContent: 'space-between',
   gap: '1.6875rem',
+
+  '@media(max-width: 1000px)': {
+    flexDirection: 'column',
+    padding: '1.6875rem'
+  }
 });
 
 export const MainContent = styled('article', {
   height: '100%',
   width: '45%',
   minWidth: '8.1216rem',
-  minHeight: '26.75rem',
   paddingLeft: '1rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '1.375rem',
+
+  '@media(max-width: 1000px)': {
+    width: '100%',
+  },
   
   'div': {
     'h2': {
@@ -54,11 +62,13 @@ export const MainContentSection = styled('div', {
   display: 'flex',
   gap: '1.6875rem',
   textAlign: 'justify',
+  alignItems: 'center',
 
   'div': {
     display: 'flex',
     flexDirection: 'column',
     gap: '.5rem',
+    maxWidth: '75%',
   }
 })
 
@@ -101,19 +111,29 @@ export const FormContainer = styled('form', {
   gap: '1.6875rem',
   flex: 1,
 
+  '@media(max-width: 600px)': {
+    height: '100%',
+  },
+
   'div': {
     flex: 1,
     display: 'flex',
     alignItems: 'flex-start',
     gap: '1rem',
-    height: '100%',
-    justifyContent: 'flex-start',
+    height: '10rem !important',
 
+    '@media(max-width: 600px)': {
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      width: '100%',
+    },
+    
     'div': {
       flex: 1,
       display: 'flex',
+      justifyContent: 'space-between',
       flexDirection: 'column',
-      gap: '3rem'
+      height: '100%',
     }
   },
 
@@ -125,6 +145,11 @@ export const FormContainer = styled('form', {
     padding: '1rem',
     color: 'white',
     background: 'transparent',
+    minHeight: '5rem',
+    '@media(max-width: 600px)': {
+      // flexDirection: 'column',
+      width: '100%',
+    },
   },
 
   'input': {

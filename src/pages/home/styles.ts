@@ -8,6 +8,15 @@ export const ContentContainer = styled('main', {
   paddingTop: '7rem',
   paddingBottom: '7rem',
   overflowY: 'auto',
+
+  '@media(max-width: 420px)': {
+    // width: '100%',
+    paddingRight: '12rem',
+    paddingLeft: '12rem',
+    paddingTop: '5rem',
+    paddingBottom: '5rem',
+    height: 'fit-content'
+  },
 });
 
 export const MainContent = styled('section', {
@@ -18,13 +27,24 @@ export const MainContent = styled('section', {
   height: '100%',
   gap: '5.125rem',
 
+  '@media(max-width: 1000px)': {
+    flexDirection: 'column',
+    // justifyContent: 'center',
+    textAlign: 'justify',
+  },
+
   'img': {
     height: '100%',
     minHeight: '20rem',
     width: 'auto',
     borderRadius: '100%',
     border: '1rem solid #444444',
-    boxShadow: '0 0 50px black'
+    boxShadow: '0 0 50px black',
+
+    '@media(max-width: 450px)': {
+      width: '15rem',
+      minHeight: '15rem',
+    },
   }
 });
 
@@ -35,6 +55,11 @@ export const AboutResume = styled('article', {
   gap: '1rem',
   flexDirection: 'column',
   height: 'fit-content',
+
+  // '@media(max-width: 768px)': {
+  //   // flexDirection: 'column'
+  //   marginBottom: '2rem',
+  // },
 
   'h1': {
     fontWeight: 'bolder',
@@ -56,6 +81,11 @@ export const AboutResume = styled('article', {
     alignItems: 'center',
     justifyContent: 'flex-start',
     gap: '1rem',
+
+    '@media(max-width: 768px)': {
+      padding: 0,
+      marginBottom: '2rem',
+    }
   },
 
   '.portfolio-button': {

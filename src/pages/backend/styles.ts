@@ -14,17 +14,25 @@ export const ContentContainerSection = styled('section', {
   alignItems: 'center',
   justifyContent: 'space-between',
   gap: '1.6875rem',
+
+  '@media(max-width: 1000px)': {
+    flexDirection: 'column',
+    padding: '1.6875rem'
+  }
 });
 
 export const MainContent = styled('article', {
   height: '100%',
   width: '45%',
   minWidth: '8.1216rem',
-  minHeight: '26.75rem',
   paddingLeft: '1rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '1.375rem',
+
+  '@media(max-width: 1000px)': {
+    width: '100%',
+  },
   
   'div': {
     'h2': {

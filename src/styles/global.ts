@@ -19,6 +19,13 @@ export const globalStyles = globalCss({
       background: 'rgba(255,255,255,.2)',
       borderRadius: '4px',
     },
+
+    '@media(max-width: 768px)': {
+      fontSize: '14px',
+    },
+    '@media(max-width: 400px)': {
+      fontSize: '10px',
+    }
   },
 
   body: {

@@ -56,26 +56,26 @@ export default function Contact() {
           <MainContent>
             <MainContentGroup>
               <MainContentSection>
-                <Phone size={60} color='#007CED'/>
+                <Phone size={'3.5rem'} color='#007CED'/>
                 <div>
                   <h2>+55 (84) 981718070</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi quisquam, animi hic perferendis pariatur. Minus aliquam inventore consequuntur corporis quam magni consequatur reprehenderit quisquam vel, nihil corrupti, voluptatem sed.</p>
+                  <p>Telefone e whatsapp, estou disponível todos os dias das 8h as 18h.</p>
                 </div>
               </MainContentSection>
 
               <MainContentSection>
-                <MapPin size={60} color='#007CED'/>
+                <MapPin size={'3.5rem'} color='#007CED'/>
                 <div>
                   <h2>Natal, RN</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi quisquam, animi hic perferendis pariatur. Minus aliquam inventore consequuntur corporis quam magni consequatur reprehenderit quisquam vel, nihil corrupti, voluptatem sed.</p>
+                  <p>Atualmente moro em Natal RN porém trabalho de forma remota para todo o país.</p>
                 </div>
               </MainContentSection>
               
               <MainContentSection>
-                <Envelope size={60} color='#007CED'/>
+                <Envelope size={'3.5rem'} color='#007CED'/>
                 <div>
                   <h2><a href="mailto:svcarvalho38@gmail.com">svcarvalho38@gmail.com</a></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi quisquam, animi hic perferendis pariatur. Minus aliquam inventore consequuntur corporis quam magni consequatur reprehenderit quisquam vel, nihil corrupti, voluptatem sed.</p>
+                  <p>Posso ajudá-lo? Me envie um email ou preencha o formulário ao lado.</p>
                 </div>
               </MainContentSection>
             </MainContentGroup>
