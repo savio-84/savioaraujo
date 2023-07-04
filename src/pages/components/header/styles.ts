@@ -105,11 +105,13 @@ export const DropdownList = styled('ul', {
   margin: 0,
   listStyle: 'none',
   width: '10rem',
+  
 });
 
 export const DropdownItem = styled('li', {
   padding: '.5rem',
   backgroundColor: '#333333',
+  fontSize: '1.3rem',
   '&:hover': {
     backgroundColor: '#222222',
   },

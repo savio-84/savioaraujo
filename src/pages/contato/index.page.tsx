@@ -28,18 +28,21 @@ type SendMailFormType = z.infer<typeof sendMailFormSchema>;
 
 export default function Contact() {
 
-  const { register, handleSubmit, formState: {errors, isSubmitting}, setValue} = useForm<SendMailFormType>({
+  const { register, handleSubmit, formState: {errors, isSubmitting}, setValue, reset} = useForm<SendMailFormType>({
     resolver: zodResolver(sendMailFormSchema)
   });
 
   async function handleRegister({ name, email, message }: SendMailFormType) {
     console.log(name, email, message);
+    reset();
     try {
       await api.post('/sendMail', {
         name,
         email,
         message
-      })
+      });
+
+      
     } catch(error: any) {
       if (error instanceof AxiosError && error?.response?.data?.message) alert(error.response.data.message);
     }

@@ -29,8 +29,8 @@ export default function Home() {
               Sou apaixonado por TI desde criança da teoria a prática com um certo fascínio sobre a área de arquitetura de software pelo seus benefícios na construção de softwares performáticos e manuteníveis, passo a maior parte do meu tempo focado em descobrir formas cada vez melhores de criar softwares mais performáticos, organizados e legíveis para potencializar seu desempenho, manutenibilidade e reduzir seus custos com objetivo de impactar de forma positiva a vida de todos que são beneficiados com meu trabalho.
             </p>
             <div>
-              <button className='portfolio-button' onClick={() => router.push('/portfolio')}>Portfólio</button>
-              <button onClick={() => router.push('/contato')}>Contato</button>
+              {/* <button className='portfolio-button' onClick={() => router.push('/portfolio')}>Portfólio</button> */}
+              <button className='portfolio-button' onClick={() => router.push('/contato')}>Contato</button>
             </div>
           </AboutResume>
         </MainContent>

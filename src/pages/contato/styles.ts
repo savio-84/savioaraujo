@@ -13,7 +13,7 @@ export const ContentContainerSection = styled('section', {
   padding: '3.8125rem',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between',
+  height: 'fit-content',
   gap: '1.6875rem',
 
   '@media(max-width: 1000px)': {
@@ -23,7 +23,6 @@ export const ContentContainerSection = styled('section', {
 });
 
 export const MainContent = styled('article', {
-  height: '100%',
   width: '45%',
   minWidth: '8.1216rem',
   paddingLeft: '1rem',
