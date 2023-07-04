@@ -26,8 +26,7 @@ export default function Home() {
             <h2>Desenvolvedor Full Stack</h2>
             <h1>Sávio Araújo</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo cumque itaque atque! Quae cupiditate mollitia, nisi accusantium vero eum molestiae unde similique? Magni nulla enim, voluptatem ipsam quod tempore architecto.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, porro. Temporibus reprehenderit veniam recusandae dolores animi, magnam obcaecati laboriosam quo vitae minus, labore officia provident corporis quam nobis quibusdam? Dicta!
+              Sou apaixonado por TI desde criança da teoria a prática com um certo fascínio sobre a área de arquitetura de software pelo seus benefícios na construção de softwares performáticos e manuteníveis, passo a maior parte do meu tempo focado em descobrir formas cada vez melhores de criar softwares mais performáticos, organizados e legíveis para potencializar seu desempenho, manutenibilidade e reduzir seus custos com objetivo de impactar de forma positiva a vida de todos que são beneficiados com meu trabalho.
             </p>
             <div>
               <button className='portfolio-button' onClick={() => router.push('/portfolio')}>Portfólio</button>

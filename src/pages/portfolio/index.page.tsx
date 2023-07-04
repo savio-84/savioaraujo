@@ -13,6 +13,7 @@ import { PortfolioCard } from './components/card';
 import previewImg from '../../../public/banner-exemple.svg';
 import banner from '../../../public/banner-exemple-2.svg';
 
+// necessário mudar a extensão do arquivo e adicionar responsividade à página
 export default function Portfolio() {
   return (
     <>

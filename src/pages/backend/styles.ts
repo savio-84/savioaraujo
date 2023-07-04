@@ -44,6 +44,7 @@ export const MainContent = styled('article', {
 export const MainContentSection = styled('div', {
   flex: '1',
   display: 'flex',
+  alignItems: 'center',
   gap: '1.6875rem',
   textAlign: 'justify',
 
@@ -51,6 +52,7 @@ export const MainContentSection = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: '.5rem',
+    maxWidth: '75%',
   }
 })
 

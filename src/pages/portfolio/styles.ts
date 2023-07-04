@@ -9,14 +9,14 @@ export const ContentContainer = styled('main', {
 });
 
 export const ContentContainerSection = styled('section', {
-  flex: 1,
   padding: '3.8125rem',
-  display: 'flex',
-  alignItems: 'flex-start',
-  justifyContent: 'center',
-  flexWrap: 'wrap',  
-  flexGrow: 1,
   gap: '1.6875rem',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(3, 1fr)',
+
+  '@media(max-width: 768px)': {
+    gridTemplateColumns: 'repeat(1, 1fr)',
+  },
 });
 
 export const MainContent = styled('article', {

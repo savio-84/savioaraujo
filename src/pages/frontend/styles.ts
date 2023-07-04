@@ -46,11 +46,13 @@ export const MainContentSection = styled('div', {
   display: 'flex',
   gap: '1.6875rem',
   textAlign: 'justify',
+  alignItems: 'center',
 
   'div': {
     display: 'flex',
     flexDirection: 'column',
     gap: '.5rem',
+    maxWidth: '75%',
   }
 })
 

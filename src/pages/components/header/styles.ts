@@ -13,7 +13,14 @@ export const HeaderComponent = styled('header', {
   width: '100vw',
   // height:'10.125rem',
 
+  img: {
+    height: '44px !important',
+    width: '44px !important',
+    borderRadius: '100%',
+  },
+
   'div': {
+    width: 'fit-content',
     display: 'flex',
     alignItems: 'center',
     gap: '2rem',
@@ -50,6 +57,7 @@ export const Preview = styled('div', {
   paddingRight: '$8',
   borderRadius: '100%',
   overflow: 'hidden',
+  width: 'fit-content',
   
   '@media(max-width: 600px)': {
     display: 'none'

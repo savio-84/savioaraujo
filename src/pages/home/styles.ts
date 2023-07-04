@@ -7,7 +7,7 @@ export const ContentContainer = styled('main', {
   paddingLeft: '14.6875rem',
   paddingTop: '7rem',
   paddingBottom: '7rem',
-  overflowY: 'auto'
+  overflowY: 'auto',
 });
 
 export const MainContent = styled('section', {
@@ -20,6 +20,7 @@ export const MainContent = styled('section', {
 
   'img': {
     height: '100%',
+    minHeight: '20rem',
     width: 'auto',
     borderRadius: '100%',
     border: '1rem solid #444444',
@@ -30,9 +31,10 @@ export const MainContent = styled('section', {
 export const AboutResume = styled('article', {
   display: 'flex',
   alignItems: 'flex-start',
-  justifyContent: 'space-evenly',
+  justifyContent: 'space-between',
+  gap: '1rem',
   flexDirection: 'column',
-  height: '100%',
+  height: 'fit-content',
 
   'h1': {
     fontWeight: 'bolder',
@@ -54,7 +56,6 @@ export const AboutResume = styled('article', {
     alignItems: 'center',
     justifyContent: 'flex-start',
     gap: '1rem',
-    paddingLeft: '1rem',
   },
 
   '.portfolio-button': {

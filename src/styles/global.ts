@@ -5,6 +5,20 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     boxSizing: 'border-box',
+
+    scrollbarWidth: 'thin',
+    scrollbarColor: 'rgba(255,255,255,.2) transparent !important',
+
+    '&::-webkit-scrollbar': {
+      width: '8px',
+    },
+    '&::-webkit-scrollbar-track': {
+      background: 'transparent !important',
+    },
+    '&::-webkit-scrollbar-thumb': {
+      background: 'rgba(255,255,255,.2)',
+      borderRadius: '4px',
+    },
   },
 
   body: {
