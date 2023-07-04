@@ -9,10 +9,9 @@ export const ContentContainer = styled('main', {
   paddingBottom: '7rem',
   overflowY: 'auto',
 
-  '@media(max-width: 420px)': {
-    // width: '100%',
-    paddingRight: '12rem',
-    paddingLeft: '12rem',
+  '@media(max-width: 768px)': {
+    paddingRight: '2rem',
+    paddingLeft: '2rem',
     paddingTop: '5rem',
     paddingBottom: '5rem',
     height: 'fit-content'
@@ -27,9 +26,8 @@ export const MainContent = styled('section', {
   height: '100%',
   gap: '5.125rem',
 
-  '@media(max-width: 1000px)': {
+  '@media(max-width: 1240px)': {
     flexDirection: 'column',
-    // justifyContent: 'center',
     textAlign: 'justify',
   },
 
@@ -42,8 +40,8 @@ export const MainContent = styled('section', {
     boxShadow: '0 0 50px black',
 
     '@media(max-width: 450px)': {
-      width: '15rem',
-      minHeight: '15rem',
+      // width: '15rem',
+      // minHeight: '15rem',
     },
   }
 });
@@ -55,11 +53,11 @@ export const AboutResume = styled('article', {
   gap: '1rem',
   flexDirection: 'column',
   height: 'fit-content',
+  flex: 1,
 
-  // '@media(max-width: 768px)': {
-  //   // flexDirection: 'column'
-  //   marginBottom: '2rem',
-  // },
+  '@media(max-width: 1000px)': {
+    alignItems: 'center',
+  },
 
   'h1': {
     fontWeight: 'bolder',
@@ -81,10 +79,10 @@ export const AboutResume = styled('article', {
     alignItems: 'center',
     justifyContent: 'flex-start',
     gap: '1rem',
+    marginBottom: '2rem',
 
-    '@media(max-width: 768px)': {
+    '@media(max-width: 1230px)': {
       padding: 0,
-      marginBottom: '2rem',
     }
   },
 
